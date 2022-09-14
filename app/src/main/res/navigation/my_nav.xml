@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.vix_schoters_jerry_berlin.ui.fragment.news.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsBottomSheet"
+            app:destination="@id/newsBottomSheet" />
+        <argument
+            android:name="backFromBottomSheet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_newsFragment_to_detailsActivity2"
+            app:destination="@id/detailsActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.example.vix_schoters_jerry_berlin.ui.fragment.bookmark.BookmarksFragment"
+        android:label="Bookmarks"
+        tools:layout="@layout/fragment_bookmarks" >
+        <action
+            android:id="@+id/action_bookmarksFragment_to_detailsActivity2"
+            app:destination="@id/detailsActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.vix_schoters_jerry_berlin.ui.fragment.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <dialog
+        android:id="@+id/newsBottomSheet"
+        android:name="com.example.vix_schoters_jerry_berlin.ui.fragment.news.bottomsheet.NewsBottomSheet"
+        android:label="fragment_news_bottom_sheet"
+        tools:layout="@layout/fragment_news_bottom_sheet" >
+        <action
+            android:id="@+id/action_newsBottomSheet_to_newsFragment"
+            app:destination="@id/newsFragment"
+            app:popUpTo="@id/newsFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+    <activity
+        android:id="@+id/detailsActivity2"
+        android:name="com.example.vix_schoters_jerry_berlin.ui.DetailsActivity"
+        android:label="Details"
+        tools:layout="@layout/activity_details" >
+        <argument
+            android:name="article"
+            app:argType="com.example.vix_schoters_jerry_berlin.model.Article" />
+    </activity>
+</navigation>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">VIX-Schoters-Jerry_Berlin</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_fragment">News</string>
+    <string name="bookmarks_fragment">Bookmarks</string>
+    <string name="profile_fragment">Profile</string>
+
+    <string name="country">Country</string>
+    <string name="id">id</string>
+    <string name="us">us</string>
+    <string name="sg">sg</string>
+    <string name="au">au</string>
+    <string name="br">br</string>
+    <string name="ru">ru</string>
+    <string name="cn">cn</string>
+    <string name="jp">jp</string>
+
+    <string name="category">Category</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="general">General</string>
+    <string name="technology">Technology</string>
+    <string name="sports">Sports</string>
+    <string name="science">Science</string>
+    <string name="apply">Apply</string>
+
+    <string name="bookmark">Bookmark</string>
+    <string name="empty_bookmark">Empty Bookmark</string>
+    <string name="delete_bookmark_news">Delete Bookmark News</string>
+    <string name="deleteall">Delete All</string>
+
+    <string name="jerry_berlin">Jerry Berlin</string>
+    <string name="username_github">jerryberlin</string>
+
+    <string name="deskripsi">Deskripsi</string>
+    <string name="tanggal_dan_waktu">Tanggal dan waktu</string>
+    <string name="author_dan_source">Author dan Source</string>
+    <string name="judul">Judul</string>
+
+</resources>
